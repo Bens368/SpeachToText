@@ -1,0 +1,7 @@
+openai==0.28.0
+streamlit
+moviepy
+numpy
+Pillow
+tqdm
+imageio[ffmpeg]
