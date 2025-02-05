@@ -6,10 +6,10 @@ from moviepy import *
 # Configuration de l'API OpenAI
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
-st.title("🎥 Video to Text & Summary Transcriber")
+st.title("Video to text AI")
 st.write(
     "Welcome! This tool converts video files into text using OpenAI's Whisper model, "
-    "and then generates a structured summary. Upload a video to get started!"
+    "and then generates a structured document. Simpply upload a video to get started!"
 )
 
 # Initialisation des états
@@ -78,7 +78,7 @@ if st.session_state.summary:
     st.text_area("Summary", st.session_state.summary, height=300)
 
 # Bouton pour réinitialiser l'application
-if st.button("🔄 Reset"):
+if st.button("Reset"):
     st.session_state.transcription = None
     st.session_state.summary = None
     st.experimental_rerun()
